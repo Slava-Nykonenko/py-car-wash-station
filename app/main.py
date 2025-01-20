@@ -1,6 +1,6 @@
 class Car:
-    def __init__(self, comfort_class: int, clean_mark: int, brand: str) \
-            -> None:
+    def __init__(self, comfort_class: int, clean_mark: int, brand: str) -> \
+            None:
         self.comfort_class = comfort_class
         self.clean_mark = clean_mark
         self.brand = brand
@@ -14,7 +14,7 @@ class CarWashStation:
         self.average_rating = average_rating
         self.count_of_ratings = count_of_ratings
 
-    def serve_cars(self, cars: list) -> list:
+    def serve_cars(self, cars: list) -> float:
         income = 0
         for car in cars:
             if car.clean_mark < self.clean_power:
